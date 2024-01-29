@@ -1,0 +1,72 @@
+/* Font Import - Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap');
+
+
+.membership-form {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ffaf4e;
+  border-radius: 15px;
+  background: linear-gradient(120deg, #fd5f00, #fcb045, #fcaf17);
+  color: #fff;
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.2);
+  font-family: 'Roboto', sans-serif;
+}
+
+.membership-form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.membership-form label {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.membership-form input {
+  width: 90%;
+  padding: 18px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  border: 2px solid #ffaf4e;
+  font-size: 20px;
+  color: #333;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.membership-form input:focus {
+  outline: none;
+  border-color: #fcaf17;
+}
+
+.membership-form button {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  background-color: #ffce93;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+}
+
+.membership-form button:hover {
+  background-color: #fd7e00;
+}
+
+.payment-success {
+  text-align: center;
+  color: #50d890;
+  font-size: 26px;
+  margin-top: 35px;
+}

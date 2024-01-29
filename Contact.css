@@ -1,0 +1,95 @@
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(48, 169, 18); /* Header background color */
+    color: #fff; /* Header text color */
+  }
+  
+  .logo img {
+    height: 80px;
+    width: 80px;
+    margin-left: 20px;
+  }
+  
+  .headline-container {
+    flex-grow: 1; /* Allow the headline to take available space */
+    /* margin-left: 5px;  */
+  }
+  
+  .headline {
+    color: #fdf001ea;
+    font-size: 45px;
+    margin: 0; /* Reset margin for h1 element */
+  }
+  
+  .headline span:first-child {
+    font-size: 18px; /* smaller size for "Welcome to" */
+    display: block; /* make "Welcome to" appear on a new line */
+    color: #ffffff;
+  }
+  
+
+  /* Contact section styles */
+.contact-section {
+    text-align: center;
+    margin-top: 50px; /* Adjust margin top as needed */
+  }
+  
+  .contact-heading h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    /* Additional styles for the 'Contact' heading */
+  }
+  
+  .communicate-subheading h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    /* Additional styles for the 'Communicate' subheading */
+  }
+  
+  .alumni-association-message p {
+    font-size: 18px;
+    /* Additional styles for the message */
+  }
+
+ 
+
+.foot {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(6, 0, 61); ;
+  padding: 25px;
+  color: ghostwhite;
+}
+
+/* Box styles */
+.footer-box {
+  width: calc(33.33% - 20px); /* Adjust width as needed */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.footer-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.footer-box p,
+.footer-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-box ul li {
+  margin-bottom: 10px;
+}
+
+
+.tag{
+  text-decoration: none;
+  color: #fff;
+}

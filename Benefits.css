@@ -1,0 +1,26 @@
+.headlinee {
+    top: -20rem;
+    font-size: 2.4em;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+  }
+  
+  .benefits-container {
+    max-width: 950px;
+    margin: 0 auto;
+   
+    
+  }
+  
+  .benefits-list {
+    padding-left: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+  }
+  
+  .benefits-list li {
+    margin-bottom: 10px;
+   
+  }
+  

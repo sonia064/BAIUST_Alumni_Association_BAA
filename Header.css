@@ -1,0 +1,772 @@
+
+/* Styles for header, main, and footer */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(48, 169, 18); /* Header background color */
+  color: #fff; /* Header text color */
+}
+
+.logo img {
+  height: 80px;
+  width: 80px;
+  margin-left: 20px;
+}
+
+.headline-container {
+  flex-grow: 1; /* Allow the headline to take available space */
+  /* margin-left: 5px;  */
+}
+
+.headline {
+  color: #fdf001ea;
+  font-size: 45px;
+  margin: 0; /* Reset margin for h1 element */
+}
+
+.headline span:first-child {
+  font-size: 18px; /* smaller size for "Welcome to" */
+  display: block; /* make "Welcome to" appear on a new line */
+  color: #ffffff;
+}
+
+
+
+/* styles for the navigation items */
+.nav-item {
+  text-decoration: none;
+  /* background-color: rgb(12, 0, 115);  */
+  border-radius: 10px; /* Border radius */
+  padding: 1px 2px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  color: #fff;
+  margin-right: 10px; 
+  /* box-shadow: 0px 3px 5px rgb(255, 255, 255); */
+}
+
+
+.nav-item:hover {
+  color: #ffd901;
+  /* background-color: #3e3662; */
+  
+}
+
+
+.welfare{
+  /* text-decoration: none; */
+  /* background-color: rgb(255, 0, 0);  */
+  border-radius: 10px; /* Border radius */
+  padding: 1px 2px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  color: #fbda00; /* Text color */
+  margin-right: 10px; 
+  box-shadow: 3px 1px 10px 1px rgb(255, 255, 255);
+}
+
+
+.welf{
+  text-decoration: none;
+  outline: none;
+  color: #fbda00;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  color: #000000; /* Change color on hover */
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding: 20px;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Send it to the back */
+  background-image: url('/alumni_.jpg'); /* Replace with your blurred image path */
+  filter: blur(7px); /* Apply blur effect */
+  background-size: cover;
+  background-position: center;
+}
+
+.slider-container {
+  position: relative;
+  width: 600px; 
+  height: 400px; 
+}
+
+
+.slider {
+  position: relative;
+  z-index: 1; /* Ensure slider is above the background */
+  text-align: center;
+  width: 100%;
+}
+
+
+
+.slider img {
+  max-width: 100%;
+  height: 400px;
+  width: 600px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  border: 1px solid rgb(221, 218, 218);
+  transition: opacity 0.5s ease-in-out;
+  box-shadow: 2px 5px 12px 12px rgb(213, 213, 213);
+}
+
+.slider button {
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-size: 10px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  color: #fff;
+  background-color: #3498db; 
+}
+
+.slider button:hover {
+  background-color: #2980b9; /* Change button color on hover */
+}
+
+/*styles for more modern buttons */
+.slider button.previous {
+  width: 60px;
+  background-color: rgb(255, 0, 247); /* New color for previous button */
+  margin-right: 10px; 
+}
+
+.slider button.next {
+  width: 60px;
+  background-color: rgb(30, 0, 254); /* New color for next button */
+}
+
+
+.thumbnail {
+  width: 50px; 
+  height: 50px; 
+  margin: 5px; 
+  cursor: pointer;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbnails-left{
+  position: absolute;
+  left: 20px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.thumbnails-right {
+  transform: scaleX(-1);
+}
+
+/* Additional styling for the active thumbnail */
+.thumbnail.active {
+  border: 7px solid rgb(253, 245, 3); /* Change color or add any other indication for active thumbnail */
+}
+
+
+
+
+
+.sub-main {
+  height: auto;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+
+.sub-main button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  /* border-radius: 50px 0 50px 50px; */
+  cursor: pointer;
+}
+
+
+.login{
+  border-radius: 40px 0 40px 40px;
+}
+
+
+.alumni a{
+   color: whitesmoke;
+}
+.convo{
+  border-radius: 40px 40px 40px 0;
+}
+/* specific styles for Alumni Login and Convocation buttons */
+.alumni-login {
+  margin-top: 50px;
+  background-color: rgb(255, 221, 0);
+  color: rgb(0, 0, 0);
+  box-shadow: 2px 3px 5px rgb(186, 186, 186); /* Add box shadow */
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.alumni-login:hover {
+  box-shadow: 9px 12px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Remove underline and adjust link styles */
+a.alumni {
+  text-decoration: none; /* Remove underline */
+  color: rgb(2, 2, 2);
+  
+}
+
+/* Remove red background on focus and active states */
+a.alumni-login:focus,
+a.alumni-login:active {
+  background-color: transparent;
+  outline: none; /* Remove the outline  */
+}
+
+/* Position buttons left and right */
+.buttons-below {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+
+.sub-main-message {
+  font-size: 50px;
+  margin-top: 20px; 
+  text-align: center;
+  color: rgb(48, 169, 18); 
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles for the new parallel boxes */
+.parallel-boxes {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: 0 auto;
+  box-shadow: 0px 3px 6px rgb(72, 72, 72);
+}
+
+.box {
+  width: 40%; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* styles for the two boxes */
+.box h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.box p {
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+/* the new additional boxes */
+.additional-boxes {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 40px auto; /* Add space between the existing and new boxes */
+  box-shadow: 0px 3px 6px rgb(87, 87, 87);
+}
+
+.additional-boxes .box {
+  width: 45%; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* styles for the new boxes */
+.additional-boxes .box h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.additional-boxes .box p {
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
+/* Headline message style */
+.headline-message {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.headline-message h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Middle box style */
+.middle-box {
+  height: 400px;
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 0 50px 0 50px;
+  background: #ffdddd;
+  box-shadow: 0px 3px 6px rgb(248, 186, 186);
+}
+
+.middle-content {
+  text-align: center;
+}
+
+
+.middle-content img {
+  border-radius: 35%;
+  max-width: 80%;
+  height: 240px;
+}
+
+/* Styles for rows of boxes */
+.five-boxes-row {
+  display: flex;
+  height: 500px;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+
+.five-boxes-row .box {
+  background: #e1e5ff;
+  width: 19%; 
+  padding: 25px;
+  border: 1px solid #ccc;
+  border-radius: 50px 0 0 0;
+  box-shadow: 0px 3px 6px rgb(186, 197, 248);
+  margin-left: 20px;
+}
+
+.five-boxes-row img {
+  max-width: 100%;
+  height: 300px;
+}
+
+
+
+
+/* Styles for the container of two parallel boxes */
+.parallel-boxes {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Styles for the "Joined Member" box */
+.joined-member-box {
+  margin-top: 40px;
+  color: #000000;
+ 
+}
+
+/* Styles for the container of two rows of images */
+.images-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+
+.images-row .box {
+  width: 100px; 
+  height: 100px;
+  margin-bottom: 20px;
+  border: 6px solid #c0c0c0; /* Example border style, adjust as needed */
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+
+.images-row .box img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+
+/* Styles for individual boxes with rounded images */
+.rounded-image {
+  padding: 10px;
+  border-radius: 100%;
+  border: 4px solid #ccc; /* Larger border */
+  text-align: center;
+  margin: 10px;
+  
+}
+
+.rounded-image img {
+  border-radius: 100%; /* Ensure the image itself is rounded */
+  width: 100px; 
+  height: 90px; 
+  object-fit: cover;
+ 
+}
+
+
+
+
+
+
+
+
+
+/* Headline message style */
+.headline-msg {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.headline-msg h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* Middle box style */
+.mid-box {
+  height: 440px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #cbc6c6;
+}
+
+
+.mid-content {
+  text-align: center;
+  align-items: center;
+}
+
+
+
+.mid-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styles for rows of boxes */
+.three-boxes-row {
+  display: flex;
+  height: 400px;
+  margin: 25px auto;
+}
+
+
+.three-boxes-row .box {
+  width: 17%; 
+  padding: 30px;
+  margin-left: 8em;
+  /* margin-right: 50px; */
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 3px 3px 6px 3px rgb(233, 236, 228);
+}
+
+.three-boxes-row img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+.footer {
+  height: 25em;
+  text-align: center;
+  background-color: rgb(6, 0, 61); /* Footer background color */
+  color: #eeff02; /* Footer text color */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.footer-img {
+  padding: 50px;
+  width: 110px; 
+  height: 106px;
+  /* border-radius: 50%; */
+}
+
+.text-lines {
+  margin-top: 5px;
+}
+
+.text-lines p {
+  margin: 5px 0;
+}
+
+.footer-image {
+  height: 1px;
+  width: 2px;
+  position: absolute;
+  /* bottom: 10px; */
+  right: 45px;
+  cursor: pointer;
+  top: 340px;
+}
+
+
+
+.sub-footer {
+  position: fixed;
+  bottom: -35px;
+  width: 98.9%;
+  background-color: rgb(255, 174, 0);
+  color: white;
+  text-align: center;
+  
+}
+
+
+
+.custom-icon {  
+  color: #ffffff; 
+  margin-left: 2px;
+}
+
+
+.submenu {
+  position: absolute; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  /* border-radius: 10px; */
+  z-index: 10;
+  display: flex; 
+  flex-direction: column; 
+  overflow: hidden; 
+}
+
+/* Style for each submenu item */
+.submenu li {
+  position: relative;
+  padding: 10px 19px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: green; /* Gradient background */
+  color: #fff; 
+  border-radius: 1px;
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+
+
+.submenu a {
+  text-decoration: none; /* Remove underline */
+  color: #fff; 
+  
+}
+
+.submenu a:hover{
+  text-decoration: none; /* Remove underline */
+  color: rgb(255, 238, 0); 
+  
+}
+
+
+/* Style for the last submenu item to remove the border */
+.submenu li:last-child {
+  border-bottom: none;
+}
+
+
+/* Hover effect for submenu items */
+.submenu li:hover {
+  transform: translateX(0);
+  opacity: 1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+
+/* Zigzag animation for submenu items */
+.submenu li:nth-child(odd) {
+  animation: zigzag 0.5s ease forwards;
+}
+
+
+.submenu li:nth-child(even) {
+  animation: zigzag-reverse 0.5s ease forwards;
+}
+
+/* Animation keyframes for zigzag effect */
+@keyframes zigzag {
+  0% {
+    transform: translateX(100%) translateY(-20px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-30%) translateY(-20px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zigzag-reverse {
+  0% {
+    transform: translateX(-100%) translateY(-20px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(30%) translateY(-20px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* CSS for the member submenu */
+.submenuu {
+  color: white;
+  display: none;
+  position: absolute;
+  background: green;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+/* Stylish button style */
+.buttonn {
+  background: green;
+  color: #ffffff;
+  border: none;
+  /* padding: 10px 20px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Style for the visible submenu */
+.nav-item:hover .submenuu {
+  display: block;
+}
+
+/* Hover effect for the buttons */
+/* .buttonn:hover {
+  background-color: rgb(41, 185, 53);
+} */
+
+/* CSS for the "Be Our Member" button and its submenu */
+.be-our-member:hover .member-submenuu {
+  display: block;
+}
